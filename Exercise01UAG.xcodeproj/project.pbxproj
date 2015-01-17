@@ -16,6 +16,10 @@
 		F2CB8C111A6ABB0C0003A95F /* Exercise01UAGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CB8C101A6ABB0C0003A95F /* Exercise01UAGTests.m */; };
 		F2CB8C1D1A6AD3410003A95F /* bartSimpson.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CB8C1B1A6AD3410003A95F /* bartSimpson.png */; };
 		F2CB8C1E1A6AD3410003A95F /* LisaSimpson.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CB8C1C1A6AD3410003A95F /* LisaSimpson.png */; };
+		F2CB8C221A6ADBFA0003A95F /* homeroSimpson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2CB8C1F1A6ADBFA0003A95F /* homeroSimpson.jpg */; };
+		F2CB8C231A6ADBFA0003A95F /* maggieSimpson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2CB8C201A6ADBFA0003A95F /* maggieSimpson.jpg */; };
+		F2CB8C241A6ADBFA0003A95F /* margeSimpson.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CB8C211A6ADBFA0003A95F /* margeSimpson.png */; };
+		F2CB8C271A6AE8CE0003A95F /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CB8C261A6AE8CE0003A95F /* Home.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		F2CB8C101A6ABB0C0003A95F /* Exercise01UAGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exercise01UAGTests.m; sourceTree = "<group>"; };
 		F2CB8C1B1A6AD3410003A95F /* bartSimpson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bartSimpson.png; sourceTree = "<group>"; };
 		F2CB8C1C1A6AD3410003A95F /* LisaSimpson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LisaSimpson.png; sourceTree = "<group>"; };
+		F2CB8C1F1A6ADBFA0003A95F /* homeroSimpson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homeroSimpson.jpg; sourceTree = "<group>"; };
+		F2CB8C201A6ADBFA0003A95F /* maggieSimpson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maggieSimpson.jpg; sourceTree = "<group>"; };
+		F2CB8C211A6ADBFA0003A95F /* margeSimpson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = margeSimpson.png; sourceTree = "<group>"; };
+		F2CB8C251A6AE8CE0003A95F /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		F2CB8C261A6AE8CE0003A95F /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +99,8 @@
 				F2CB8BF91A6ABB0B0003A95F /* AppDelegate.m */,
 				F2CB8BFB1A6ABB0B0003A95F /* Welcome.h */,
 				F2CB8BFC1A6ABB0B0003A95F /* Welcome.m */,
+				F2CB8C251A6AE8CE0003A95F /* Home.h */,
+				F2CB8C261A6AE8CE0003A95F /* Home.m */,
 				F2CB8BFE1A6ABB0B0003A95F /* Main.storyboard */,
 				F2CB8C011A6ABB0B0003A95F /* Images.xcassets */,
 				F2CB8C031A6ABB0B0003A95F /* LaunchScreen.xib */,
@@ -127,6 +138,9 @@
 		F2CB8C1A1A6AD3200003A95F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F2CB8C1F1A6ADBFA0003A95F /* homeroSimpson.jpg */,
+				F2CB8C201A6ADBFA0003A95F /* maggieSimpson.jpg */,
+				F2CB8C211A6ADBFA0003A95F /* margeSimpson.png */,
 				F2CB8C1B1A6AD3410003A95F /* bartSimpson.png */,
 				F2CB8C1C1A6AD3410003A95F /* LisaSimpson.png */,
 			);
@@ -213,11 +227,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2CB8C241A6ADBFA0003A95F /* margeSimpson.png in Resources */,
 				F2CB8C1E1A6AD3410003A95F /* LisaSimpson.png in Resources */,
 				F2CB8C1D1A6AD3410003A95F /* bartSimpson.png in Resources */,
 				F2CB8C001A6ABB0B0003A95F /* Main.storyboard in Resources */,
+				F2CB8C231A6ADBFA0003A95F /* maggieSimpson.jpg in Resources */,
 				F2CB8C051A6ABB0B0003A95F /* LaunchScreen.xib in Resources */,
 				F2CB8C021A6ABB0B0003A95F /* Images.xcassets in Resources */,
+				F2CB8C221A6ADBFA0003A95F /* homeroSimpson.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +255,7 @@
 				F2CB8BFD1A6ABB0B0003A95F /* Welcome.m in Sources */,
 				F2CB8BFA1A6ABB0B0003A95F /* AppDelegate.m in Sources */,
 				F2CB8BF71A6ABB0B0003A95F /* main.m in Sources */,
+				F2CB8C271A6AE8CE0003A95F /* Home.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

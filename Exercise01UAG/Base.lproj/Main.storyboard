@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iniciar Sesión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8tn-ex-gLi" userLabel="lblLogin">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Siguiente Imagen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8tn-ex-gLi" userLabel="lblLogin">
                                 <rect key="frame" x="69" y="361" width="243" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.18703818472072875" green="0.58147762784498469" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -20,7 +20,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registrarse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GIr-g7-ICf" userLabel="lblRegistrar">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imagen Anterior" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GIr-g7-ICf" userLabel="lblRegistrar">
                                 <rect key="frame" x="69" y="428" width="243" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.41296195662616286" blue="0.58792752647446977" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,6 +36,17 @@
                                 </state>
                                 <connections>
                                     <action selector="btnLoginSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q93-Wo-2gT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dps-a8-QIx" userLabel="btnNext">
+                                <rect key="frame" x="66" y="490" width="243" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLoginSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="et9-sk-lCn"/>
+                                    <action selector="btnNextSegue:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MKp-PA-UrZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido a la App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oio-co-icd" userLabel="lblMessage">
@@ -59,6 +70,14 @@
                                     <action selector="btnRegistrarSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SZp-96-VGg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bvi-O1-Xol" userLabel="lblRegistrar">
+                                <rect key="frame" x="69" y="491" width="243" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.72555882918821157" blue="0.13465064102129509" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.55252349552965407" green="0.94301449475552768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -66,11 +85,57 @@
                     <connections>
                         <outlet property="imgImage" destination="x0P-xM-4D2" id="IDS-0J-FfD"/>
                         <outlet property="lblMessage" destination="Oio-co-icd" id="I4D-yJ-3al"/>
+                        <segue destination="hwj-E8-ABK" kind="modal" identifier="SegueToHome" id="sj5-uh-rih"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="202.5" y="318.5"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="AxI-Hi-De0">
+            <objects>
+                <viewController storyboardIdentifier="Home" id="hwj-E8-ABK" customClass="Home" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nzO-q8-tf8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="viewcontroller Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aJw-au-0hE">
+                                <rect key="frame" x="55" y="49" width="255" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ir a Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Rw-ZJ-8Gt" userLabel="lblIrWelcome">
+                                <rect key="frame" x="161" y="356" width="149" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.94255050505050508" green="0.15032233355244379" blue="0.052475470883557224" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FY6-0v-yTf" userLabel="btnIrWelcome">
+                                <rect key="frame" x="161" y="356" width="149" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnIrWelcomeSender:" destination="hwj-E8-ABK" eventType="touchUpInside" id="Oar-qi-AKs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.69568454365806764" blue="0.95220244684664557" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ojp-Q3-PYS"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="GoToWelcome" id="erF-QS-dO2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uys-3j-Oku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743.5" y="318.5"/>
         </scene>
     </scenes>
     <resources>

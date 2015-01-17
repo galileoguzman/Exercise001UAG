@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblMessage;
 @property (weak, nonatomic) IBOutlet UIImageView *imgImage;
 - (IBAction)btnRegistrarSender:(id)sender;
+- (IBAction)btnNextSegue:(id)sender;
 
 
 @end
