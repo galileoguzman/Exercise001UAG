@@ -20,6 +20,7 @@
 		F2CB8C231A6ADBFA0003A95F /* maggieSimpson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2CB8C201A6ADBFA0003A95F /* maggieSimpson.jpg */; };
 		F2CB8C241A6ADBFA0003A95F /* margeSimpson.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CB8C211A6ADBFA0003A95F /* margeSimpson.png */; };
 		F2CB8C271A6AE8CE0003A95F /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CB8C261A6AE8CE0003A95F /* Home.m */; };
+		F2EA98FC1A6B439F00629ED6 /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA98FB1A6B439F00629ED6 /* Declarations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		F2CB8C211A6ADBFA0003A95F /* margeSimpson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = margeSimpson.png; sourceTree = "<group>"; };
 		F2CB8C251A6AE8CE0003A95F /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		F2CB8C261A6AE8CE0003A95F /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		F2EA98FA1A6B439F00629ED6 /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		F2EA98FB1A6B439F00629ED6 /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				F2CB8C1A1A6AD3200003A95F /* images */,
 				F2CB8BF81A6ABB0B0003A95F /* AppDelegate.h */,
 				F2CB8BF91A6ABB0B0003A95F /* AppDelegate.m */,
+				F2EA98FA1A6B439F00629ED6 /* Declarations.h */,
+				F2EA98FB1A6B439F00629ED6 /* Declarations.m */,
 				F2CB8BFB1A6ABB0B0003A95F /* Welcome.h */,
 				F2CB8BFC1A6ABB0B0003A95F /* Welcome.m */,
 				F2CB8C251A6AE8CE0003A95F /* Home.h */,
@@ -196,6 +201,7 @@
 				TargetAttributes = {
 					F2CB8BF01A6ABB0B0003A95F = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = QXF33N93KH;
 					};
 					F2CB8C091A6ABB0C0003A95F = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -256,6 +262,7 @@
 				F2CB8BFA1A6ABB0B0003A95F /* AppDelegate.m in Sources */,
 				F2CB8BF71A6ABB0B0003A95F /* main.m in Sources */,
 				F2CB8C271A6AE8CE0003A95F /* Home.m in Sources */,
+				F2EA98FC1A6B439F00629ED6 /* Declarations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +453,7 @@
 				F2CB8C161A6ABB0C0003A95F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2CB8C171A6ABB0C0003A95F /* Build configuration list for PBXNativeTarget "Exercise01UAGTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +462,7 @@
 				F2CB8C191A6ABB0C0003A95F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

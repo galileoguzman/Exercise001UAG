@@ -7,8 +7,8 @@
 //
 
 #import "Welcome.h"
+#import "Declarations.h"
 
-NSMutableArray *imageArray;
 NSString *imgName;
 int image = 0;
 
@@ -35,8 +35,9 @@ int image = 0;
     
     //(UIImage *)imageNamed:(NSString *)name
     
+    imgName = [imageArray objectAtIndex:(image)];
     self.imgImage.image = [UIImage imageNamed:imageArray[image]];
-    self.lblMessage.text = [self.imgImage image].accessibilityIdentifier;
+    self.lblMessage.text = imgName;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,7 +55,8 @@ int image = 0;
     }else{
         image++;
     }
-    
+    imgName = [imageArray objectAtIndex:(image)];
+    self.lblMessage.text = imgName;
     self.imgImage.image = [UIImage imageNamed:imageArray[image]];
 }
 - (IBAction)btnRegistrarSender:(id)sender {
@@ -65,7 +67,8 @@ int image = 0;
     }else{
         image = 4;
     }
-    
+    imgName = [imageArray objectAtIndex:(image)];
+    self.lblMessage.text = imgName;
     self.imgImage.image = [UIImage imageNamed:imageArray[image]];
 }
 
